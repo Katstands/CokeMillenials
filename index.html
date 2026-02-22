@@ -1,23 +1,25 @@
-<!doctype html>
-<meta charset="utf8">
-<html>
+<html lang="en">
   <head>
-    <script type="module" src="hello.html"></script>
-    <link rel="stylesheet" href="page2.html">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Clone</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <wiki-header>COKE MILLENIALS DOT ORG</wiki-header>
-    </header>
-    <nav>
-      <wiki-nav>hey man</wiki-nav>
-    </nav>
-    <main>
-      <wiki-page>what is up guys</wiki-page>
-    </main>
+    <div class="container">
+      <div class="header-container">
+        <h1>Search Wikipedia</h1>
+        <span id="theme-toggler">Light</span>
+      </div>
+
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter search term" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="search-results"></div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
-
-
-
-

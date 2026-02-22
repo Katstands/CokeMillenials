@@ -1,27 +1,19 @@
-<html lang="en">
+<!doctype html>
+<meta charset="utf8">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wiki Clone</title>
-    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="/theme/theme.js"></script>
+    <link rel="stylesheet" href="/theme/theme.css">
   </head>
   <body>
-    <div class="container">
-      <div class="header-container">
-        <h1>Search Coke Millenials</h1>
-        <span id="theme-toggler">Light</span>
-      </div>
-
-      <form id="search-form">
-        <input type="text" id="search-input" placeholder="Enter search term" />
-        <button type="submit">See The Truth</button>
-      </form>
-
-      <div id="search-results"></div>
-    </div>
-
-    <script src="app.js"></script>
+    <header>
+      <wiki-header></wiki-header>
+    </header>
+    <nav>
+      <wiki-nav></wiki-nav>
+    </nav>
+    <main>
+      <wiki-page></wiki-page>
+    </main>
   </body>
 </html>
-
-

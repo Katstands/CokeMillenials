@@ -1,3 +1,5 @@
+<script type="text/javascript" src="logincheck.js"></script>
+
 <form action="action_page.php" method="post">
   <div class="imgcontainer">
     <img src="favicon.ico" alt="Avatar" class="avatar">
@@ -10,7 +12,7 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit">Login</button>
+    <button type="submit" onclick="checkcreds()" value="run external javascript">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

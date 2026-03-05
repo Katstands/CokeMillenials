@@ -20,9 +20,8 @@
 <body>
 <p>Enter Username</p>
 <form id="uname">
-    <input type="password" id="validate" 
+    <input type="password" id="Uvalidate" 
            placeholder="Enter Username">
-    <button type="button" onclick="fun()">Submit</button>
 </form>
 <p>Enter Password</p>
 <form id="pswd">
@@ -36,11 +35,12 @@
 <script>
     function fun() {
         let inputPswd = document.getElementById("validate")
+        let inputUname = document.getElementById("Uvalidate")
                                 .value;
         let correctPswd = "14";
         let correctUname = "Katstands";
         if (inputPswd === correctPswd) {
-          if (inputPswd === correctPswd){
+          if (inputUname === correctUname){
              window.location.replace("index.html")
           }
         } else {

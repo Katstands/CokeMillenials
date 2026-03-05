@@ -9,13 +9,45 @@
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <input type="button" onclick="checkcreds()" value="submit">
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #container {
+            display: none;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Enter Password</h2>
+<form id="pswd">
+    <input type="password" id="validate" 
+           placeholder="Enter Password">
+    <button type="button" onclick="fun()">Submit</button>
+</form>
+<div id="container">
+    <h2>Correct Password</h2>
+    <h3>Welcome to TutorialsPoint..</h3>
+</div>
+<script>
+    function fun() {
+        let inputPswd = document.getElementById("validate")
+                                .value;
+        let correctPswd = "TutorialsPoint";
+        if (inputPswd === correctPswd) {
+            document.getElementById("container")
+                .style.display = "block";
+            document.getElementById("pswd")
+                .style.display = "none";
+        } else {
+            alert("Incorrect password!");
+        }
+    }
+</script>
+</body>
+</html>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">

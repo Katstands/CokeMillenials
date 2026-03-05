@@ -6,9 +6,6 @@
   </div>
 
   <div class="container">
-    <p>Enter Username</p>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +18,12 @@
     </style>
 </head>
 <body>
+<p>Enter Username</p>
+<form id="uname">
+    <input type="password" id="validate" 
+           placeholder="Enter Username">
+    <button type="button" onclick="fun()">Submit</button>
+</form>
 <p>Enter Password</p>
 <form id="pswd">
     <input type="password" id="validate" 
@@ -35,8 +38,11 @@
         let inputPswd = document.getElementById("validate")
                                 .value;
         let correctPswd = "14";
+        let correctUname = "Katstands";
         if (inputPswd === correctPswd) {
-           window.location.replace("index.html")
+          if (inputPswd === correctPswd){
+             window.location.replace("index.html")
+          }
         } else {
             alert("Incorrect username or password");
         }

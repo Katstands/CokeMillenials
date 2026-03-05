@@ -36,10 +36,7 @@
                                 .value;
         let correctPswd = "14";
         if (inputPswd === correctPswd) {
-            document.getElementById("container")
-                .style.display = "block";
-            document.getElementById("pswd")
-                .style.display = "none";
+           window.location.replace("index.html")
         } else {
             alert("Incorrect username or password");
         }
